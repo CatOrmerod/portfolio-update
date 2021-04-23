@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,11 +16,6 @@
 
 <body>
     <div class="container">
-        <h2>Large Modal</h2>
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large
-            Modal</button>
-
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog modal-lg">
@@ -29,8 +25,9 @@
                         <h4 class="modal-title">Project Title</h4>
                     </div>
                     <div class="modal-body">
+                        <img src="./assets/images/javascript.jpg" alt="Image">
                         <p>Brief description of the project/portfolio</p>
-                        <img 
+                         
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -76,7 +73,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+                <img src="./assets/images/coding.jpg" alt="Image">
                 <div class="carousel-caption">
                     <h3>Cat Ormerod</h3>
                     <p>Full Stack Developer</p>
@@ -84,7 +81,7 @@
             </div>
 
             <div class="item">
-                <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+                <img src="./assets/images/javascript.jpg" alt="Image">
                 <div class="carousel-caption">
                     <h3>Based in NSW, Australia</h3>
                     <p>Lorem ipsum...</p>
@@ -92,7 +89,7 @@
             </div>
 
             <div class="item">
-                <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+                <img src="./assets/images/questions.jpg" alt="Image">
                 <div class="carousel-caption">
                     <h3>Proficient in </h3>
                     <p>HTML, CSS, JavaScript</p>
@@ -113,7 +110,7 @@
 
     <!--about me section-->
     <div class="media border p-3" id="about-me">
-        <img src="selfie.jpg" alt="Cat Ormerod" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <img src="./assets/images/selfie.jpg" alt="Cat Ormerod" class="mr-3 mt-3 rounded-circle" style="width:60px;">
         <div class="media-body">
           <h4>Cat Ormerod <small><i>full stack developer</i></small></h4>
           <p>I've worked in Marketing for the last 20 years, most recently in the Airline Industry
@@ -132,23 +129,26 @@
     <div class="row" id="projects">
         <div class="column">
           <div class="content">
-            <img src="mountains.jpg" alt="Mountains" style="width:100%">
+            <img src="./assets/images/day-planner.jpg" alt="Mountains" style="width:100%">
             <h3>Weather Dashboard</h3>
             <p>Lorem ipsum..</p>
+            <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
           </div>
         </div>
         <div class="column">
           <div class="content">
-            <img src="lights.jpg" alt="Lights" style="width:100%">
+            <img src="./assets/images/password.jpg" alt="Lights" style="width:100%">
             <h3>Work Day Scheduler</h3>
             <p>Lorem ipsum..</p>
+            <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
           </div>
         </div>
       
       <div class="content">
-        <img src="bear.jpg" alt="Bear" style="width:100%">
+        <img src="./assets/images/password.jpg" alt="Bear" style="width:100%">
         <h3>Tipsy Tricks</h3>
         <p>Group Project</p>
+        <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
       </div><br>
 
     <footer class="container-fluid text-center" id="contact-me">
