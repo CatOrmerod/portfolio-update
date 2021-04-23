@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Large Modal</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large
+            Modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Project Title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Brief description of the project/portfolio</p>
+                        <img 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-xxx="modal">GitHub Repo</button>
+                        <button type="button" class="btn btn-default" data-xxx="modal">Live Deployed Page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">My Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+                <div class="carousel-caption">
+                    <h3>Cat Ormerod</h3>
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+                <div class="carousel-caption">
+                    <h3>Based in NSW, Australia</h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+                <div class="carousel-caption">
+                    <h3>Proficient in </h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--about me section-->
+    <div class="media border p-3" id="about-me">
+        <img src="selfie.jpg" alt="Cat Ormerod" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4>Cat Ormerod <small><i>full stack developer</i></small></h4>
+          <p>I've worked in Marketing for the last 20 years, most recently in the Airline Industry
+            for Air New Zealand.  In that time I've enjoyed roles in Trade Marketing, Brand Development
+            and also a few Marketing Analytics roles.</p>
+        <p>I currently live in Central Coast, NSW with my partner and our 3 year old daughter, Piper. 
+            She is a crazy kid but I've loved spending time with her over the last few years.  </p>
+        <p>I'm looking for a new challenge and that has brought me to the world of coding.  Before I 
+            started this course I had no idea about front end vs back end, or what full stack meant!
+            Looking forward to seeing what the next few months brings and what career opportunities 
+            will come from it </p>
+        </div>
+      </div>
+
+<!--portfolio gallery-->
+    <div class="row" id="projects">
+        <div class="column">
+          <div class="content">
+            <img src="mountains.jpg" alt="Mountains" style="width:100%">
+            <h3>Weather Dashboard</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="lights.jpg" alt="Lights" style="width:100%">
+            <h3>Work Day Scheduler</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      
+      <div class="content">
+        <img src="bear.jpg" alt="Bear" style="width:100%">
+        <h3>Tipsy Tricks</h3>
+        <p>Group Project</p>
+      </div><br>
+
+    <footer class="container-fluid text-center" id="contact-me">
+        <p>Check out my social media</p>
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="github"><i class="fa fa-github"></i></a>
+            <a href="#" class="email"><i class="fa fa-email"></i></a>
+          </div>
+    </footer>
+
+</body>
+
+</html>
