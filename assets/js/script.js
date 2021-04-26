@@ -6,6 +6,7 @@ var projectsContent = {
         projectTools: "HTML, CSS, JavaScript, Bootstrap, GoogleFonts",
         projectRepo: "https://github.com/CatOrmerod/work-day-scheduler",
         projectURL: "https://catormerod.github.io/work-day-scheduler/",
+        projectPic: "<img src='./assets/images/work-day-scheduler-screenshot.png' alt='Image'>",
     },
     2: { 
         projectTitle: "Weather App",
@@ -13,6 +14,7 @@ var projectsContent = {
         projectTools: "HTML, CSS, JavaScript, jQuery, API, Bootstrap, Font Awesome",
         projectRepo: "https://github.com/CatOrmerod/weather-dashboard",
         projectURL: "https://catormerod.github.io/weather-dashboard/",
+        projectPic: "<img src='./assets/images/weather-dashboard-screenshot.png' alt='Image'>",
     },
     3: { 
         projectTitle: "Tipsy Tricks - Group Project",
@@ -20,6 +22,7 @@ var projectsContent = {
         projectTools: "HTML, CSS, JavaScript, jQuery, API, Bootstrap, Font Awesome",
         projectRepo: "https://github.com/RichardtHopkins/Cocktail-suggester",
         projectURL: "https://richardthopkins.github.io/Cocktail-suggester/",
+        projectPic: "<img src='./assets/images/tipsy-tricks-screenshot.png' alt='Image'>",
     }
 }
 
@@ -31,6 +34,7 @@ $('#myModal').on('show.bs.modal', function (event) {
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
     modal.find('#modal-project-title').text(projectsContent[projectID].projectTitle)
+    $('#modal-image').html(projectsContent[projectID].projectPic)
     $('#modal-project-description').html(projectsContent[projectID].projectDescription)
     $('#modal-project-tools').html(projectsContent[projectID].projectTools)
     //populate buttons with the urls so when clicked will take to the relevant websites
