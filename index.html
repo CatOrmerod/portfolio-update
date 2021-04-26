@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Cat Ormerod - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,15 +22,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Project Title</h4>
+                        <h4 class="modal-title" id="modal-project-title">Project Title</h4>
                     </div>
                     <div class="modal-body">
                         <img src="./assets/images/javascript.jpg" alt="Image">
-                        <p>Brief description of the project/portfolio</p>
+                        <div id="modal-project-description">
+
+                        </div>
                          
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-default" data-xxx="modal">GitHub Repo</button>
                         <button type="button" class="btn btn-default" data-xxx="modal">Live Deployed Page</button>
                     </div>
@@ -56,7 +57,7 @@
                     <li><a href="#contact-me">Contact Me</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resume</a></li>
+                    <li><a href="./assets/images/resume.pdf" download="Cat-Ormerod-Resume">Download Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -130,17 +131,17 @@
         <div class="column">
           <div class="content">
             <img src="./assets/images/day-planner.jpg" alt="Mountains" style="width:100%">
-            <h3>Weather Dashboard</h3>
-            <p>Lorem ipsum..</p>
-            <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
+            <h3>Workday Scheduler</h3>
+            <p>Sole Author</p>
+            <button type="button" data-toggle="modal" data-target="#myModal" data-index="${i}">See More</button>
           </div>
         </div>
         <div class="column">
           <div class="content">
             <img src="./assets/images/password.jpg" alt="Lights" style="width:100%">
-            <h3>Work Day Scheduler</h3>
-            <p>Lorem ipsum..</p>
-            <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
+            <h3>Weather App</h3>
+            <p>Sole Author</p>
+            <button type="button" data-toggle="modal" data-target="#myModal" data-index="${i}">See More</button>
           </div>
         </div>
       
@@ -148,19 +149,19 @@
         <img src="./assets/images/password.jpg" alt="Bear" style="width:100%">
         <h3>Tipsy Tricks</h3>
         <p>Group Project</p>
-        <button type="button" data-toggle="modal" data-target="#myModal">See More</button>
+        <button type="button" data-toggle="modal" data-target="#myModal" data-index="${i}">See More</button>
       </div><br>
 
     <footer class="container-fluid text-center" id="contact-me">
         <p>Check out my social media</p>
         <div class="icon-bar">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="github"><i class="fa fa-github"></i></a>
-            <a href="#" class="email"><i class="fa fa-email"></i></a>
+            <a href="https://www.linkedin.com/in/cat-ormerod/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/CatOrmerod" class="github"><i class="fa fa-github"></i></a>
+            <a href="catormerod@gmail.com" class="email"><i class="fa fa-email"></i></a>
           </div>
     </footer>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
