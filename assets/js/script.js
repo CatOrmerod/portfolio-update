@@ -23,31 +23,36 @@ var projectsContent = [
         projectTools: "HTML, CSS, JavaScript, jQuery, API, Bootstrap, Font Awesome",
         projectRepo: "https://github.com/RichardtHopkins/Cocktail-suggester",
         projectURL: "https://richardthopkins.github.io/Cocktail-suggester/",
-}],
+}];
+//VERSION 3
+// const myModal = document.getElementById('myModal')
 
-const myModal = document.getElementById('myModal')
+// myModal.addEventListener('show.bs.modal', (event) => {
+//     const button = event.relatedTarget
+//     const projectID = button.getAttribute('data-id')
+//     const modalTitle = myModal.querySelector("#modal-project-title")
+//     const modalDescription = myModal.querySelector("#modal-project-description")
 
-myModal.addEventListener('show.bs.modal', (event) => {
-    const button = event.relatedTarget
-    const projectID = button.getAttribute('data-id')
-    const modalTitle = myModal.querySelector("#modal-project-title")
-    const modalDescription = myModal.querySelector("#modal-project-description")
 
-    modalTitle.textContent = `${projectID}`
-    modalDescription.html = 
-})
+//     modalTitle.textContent = projectsContent[projectID].projectTitle
+//     modalDescription.html = projectsContent[projectID].projectDescription
+    //modalDescription.html = 
+// })
+// VERSION 2
 //     var modal = $(this)
 //     let i = button.data('index')
 //     modal.find('#modal-project-title').text(projectsContent[i].projectTitle)
 //     $('#modal-project-description').html(projectsContent[i].projectDescription)  
 // });
 
-// $('#myModal').on('show.bs.modal', function (event) {
-//     var button = $(event.relatedTarget) // Button that triggered the modal
-//     let i = button.data('index') // Extract info from data-* attributes
-//     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//     var modal = $(this)
-//     modal.find('#modal-project-title').text(projectsContent[i].projectTitle)
-//     $('#modal-project-description').html(projectsContent[i].projectDescription)
+// VERSION 1
+$('#myModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    let projectID = button.data('id') // Extract info from data-* attributes
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('#modal-project-title').text(projectsContent[projectID].projectTitle)
+    $('#modal-project-description').html(projectsContent[projectID].projectDescription)
+    $('#modal-project-tools').html(projectsContent[projectID].projectTools)
 
-//   })
+})
