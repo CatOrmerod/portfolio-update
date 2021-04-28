@@ -1,4 +1,4 @@
-// projects object //
+// projects object using a key identifyer to link to the data-id in the HTML//
 var projectsContent = {
     1: {
         projectTitle: "Workday Scheduler",
@@ -39,6 +39,7 @@ $('#myModal').on('show.bs.modal', function (event) {
     $('#modal-project-tools').html(projectsContent[projectID].projectTools)
     //populate buttons with the urls so when clicked will take to the relevant websites
     $("#modal-repo").on("click", function(){
+        console.log(projectsContent[projectID].projectRepo);
         window.open(projectsContent[projectID].projectRepo)
     });
     
